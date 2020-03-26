@@ -1,12 +1,13 @@
 package com.zjk.wifiproject.guide;
 
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.legacy.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -100,7 +101,8 @@ public class GuideActivity extends BaseActivity {
     int[] texts = new int[] { R.string.guide_text_1, R.string.guide_text_2, R.string.guide_text_3 };
 
     //fragment
-    class GuideFragment extends BaseFragment {
+    @SuppressLint("ValidFragment")
+    public class GuideFragment extends BaseFragment {
         private int index;
 
         public GuideFragment(int index) {

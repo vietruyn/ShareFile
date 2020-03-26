@@ -9,7 +9,7 @@
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:text="关闭Wifi"
+        android:text="Turn off Wifi"
 
         android:textSize="16sp"
         android:textColor="@color/text_colot_1"
@@ -21,6 +21,6 @@
         android:layout_height="48dp"
         android:textSize="16sp"
         android:textColor="@color/text_colot_1"
-        android:text="关闭AP热点"
+        android:text="Turn off AP hotspot"
         android:id="@+id/tv_close_ap"/>
 </LinearLayout>

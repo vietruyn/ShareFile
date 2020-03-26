@@ -29,7 +29,7 @@
                 android:id="@+id/status"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:text="正在创建热点..."
+                android:text="Creating hotspot..."
                 android:layout_marginTop="50dp"
                 android:lineSpacingMultiplier="1.5"
                 android:layout_centerHorizontal="true"

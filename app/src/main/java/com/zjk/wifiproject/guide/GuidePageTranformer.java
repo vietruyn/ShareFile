@@ -1,8 +1,8 @@
 package com.zjk.wifiproject.guide;
 
 import android.graphics.Color;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.PageTransformer;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager.widget.ViewPager.PageTransformer;
 import android.view.View;
 
 import com.zjk.wifiproject.util.L;

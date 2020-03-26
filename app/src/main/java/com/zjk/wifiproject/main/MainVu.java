@@ -9,9 +9,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Rect;
-import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
+import androidx.legacy.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.drawerlayout.widget.DrawerLayout;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -288,7 +288,7 @@ public class MainVu implements Vu, SendFileListener, View.OnClickListener {
     class MainPageAdapter extends FragmentPagerAdapter {
 
         private List<Fragment> list;
-        private String tabs[] = new String[] { "应用", "音乐", "图片", "视频", "文件" };
+        private String tabs[] = new String[] { "application", "music", "image", "video", "file" };
 
         public MainPageAdapter(FragmentManager fm, List<Fragment> list) {
             super(fm);
@@ -363,7 +363,7 @@ public class MainVu implements Vu, SendFileListener, View.OnClickListener {
         }
 
         lastCount = BaseApplication.sendFileStates.keySet().size();
-        tv_select_size.setText("传输（" + lastCount + "）");
+        tv_select_size.setText("transmission（" + lastCount + "）");
         layout_bottom.setVisibility(View.VISIBLE);
     }
 

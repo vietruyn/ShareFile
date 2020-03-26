@@ -1,15 +1,13 @@
 apply plugin: 'com.android.application'
-repositories {
-    mavenCentral()
-}
-android {
-    compileSdkVersion 21
-    buildToolsVersion "22.0.1"
 
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.zjk.wifiproject"
-        minSdkVersion 14
-        targetSdkVersion 22
+        minSdkVersion 16
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -19,33 +17,38 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
 }
-
-
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     //打印日志
-    compile 'com.orhanobut:logger:1.8'
+    implementation 'com.orhanobut:logger:1.8'
     //函数响应式编程
   //  compile 'io.reactivex:rxandroid:0.24.0'
     //android系统兼容包
-    compile "com.android.support:appcompat-v7:22.+"
-    compile 'com.android.support:support-v13:22.+'
-    compile 'com.android.support:support-v4:22.+'
-    compile 'com.android.support:palette-v7:+'
-    compile 'com.android.support:recyclerview-v7:+'
-    compile 'com.android.support:cardview-v7:22.+'
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    //noinspection GradleCompatible
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 
    // compile 'com.jakewharton:butterknife:5.1.2'
    // compile 'com.jakewharton.timber:timber:2.5.0'
     //弹性动画
-    compile 'com.facebook.rebound:rebound:0.3.7'
+    implementation 'com.facebook.rebound:rebound:0.3.7'
     //图片加载显示
-    compile 'com.facebook.fresco:fresco:0.3.0+'
+    //noinspection GradleDynamicVersion
     //订阅者/发布者模式
-    compile 'de.greenrobot:eventbus:2.4.0'
+    implementation 'de.greenrobot:eventbus:2.4.0'
     //涟漪动画
-    compile 'com.balysv:material-ripple:1.0.2'
+    implementation 'com.balysv:material-ripple:1.0.2'
+
+    implementation 'com.facebook.fresco:fresco:2.1.0'
+
+    implementation 'rebus:permission-utils:2.0.7'
 }
 
 

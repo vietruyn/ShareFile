@@ -5,6 +5,11 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageStats;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
+
+import androidx.annotation.NonNull;
 
 import com.zjk.wifiproject.app.AppEntity;
 
@@ -47,4 +52,7 @@ public class AppUtils {
 
         return appInfos;
     }
+
+
+
 }

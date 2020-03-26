@@ -32,7 +32,7 @@
             android:id="@+id/id_dir_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="所有图片"
+            android:text="All pictures"
             android:textColor="#000" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="4723张"
+            android:text="4723 sheets"
             android:textColor="#444"
             android:textSize="12sp" />
     </LinearLayout>
